@@ -28,6 +28,8 @@ CREATE TABLE laina (
     kirja_id INT,
     omistaja_id INT,
     lainauspaiva DATE,
+    lainausaika TIME,
+    palautuspaiva DATE,
     palautusaika TIME,
     FOREIGN KEY (kirja_id) REFERENCES kirja(kirja_id),
     FOREIGN KEY (omistaja_id) REFERENCES omistaja(omistaja_id)
@@ -55,8 +57,8 @@ INSERT INTO kirja VALUES
 (5, 'Danten 7 helvettiä', 'Dante Alighieri', 22.50, '2024-05-12', 1);
 
 INSERT INTO laina VALUES
-(1, 2, 2, '2026-01-15', '16:30:00'),
-(2, 1, 4, '2026-03-12', '14:15:00'),
-(3, 5, 3, '2026-05-08', '18:45:00'),
-(4, 4, 5, '2026-07-21', '17:20:00'),
-(5, 3, 1, '2026-09-10', '15:00:00');
+(1, 2, 2, '2026-01-15', '16:30:00', '2026-02-05', '15:45:00'),
+(2, 1, 4, '2026-03-12', '14:15:00', '2026-03-25', '13:20:00'),
+(3, 5, 3, '2026-05-08', '18:45:00', '2026-05-29', '17:30:00'),
+(4, 4, 5, '2026-07-21', '17:20:00', '2026-08-04', '16:10:00'),
+(5, 3, 1, '2026-09-10', '15:00:00', '2026-09-24', '14:30:00');
