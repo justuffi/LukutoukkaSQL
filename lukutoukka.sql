@@ -40,7 +40,6 @@ INSERT INTO omistaja VALUES
 (4, 'Donkey', 'Kong'),
 (5, 'Kimmo', 'Laiho');
 
-
 INSERT INTO kategoria VALUES
 (1, 'Fantasia'),
 (2, 'Scifi'),
@@ -49,11 +48,11 @@ INSERT INTO kategoria VALUES
 (5, 'Kauhu');
 
 INSERT INTO kirja VALUES
-(1, 'Harry Potter ja viisasten kivi', 'J.K. Rowling', 24.90, '2024-01-15', 1),
-(2, 'Hobitti', 'J.R.R. Tolkien', 19.90, '2024-02-10', 1),
-(3, 'Dune', 'Frank Herbert', 29.90, '2024-03-05', 2),
-(4, 'Clean Code', 'Robert C. Martin', 39.90, '2024-04-20', 3),
-(5, 'Sinuhe Egyptilainen', 'Mika Waltari', 22.50, '2024-05-12', 4);
+(1, 'One Piece Vol. 1', 'Eiichiro Oda', 24.90, '2024-01-15', 1),
+(2, 'Pieni Elämä', 'Hanya Yanagihara', 19.90, '2024-02-10', 4),
+(3, 'Äkkilähtöjä Tampereella', 'Ritva Vepsä', 29.90, '2024-03-05', 4),
+(4, 'Tympeät tytöt - Aikuistumisriittejä', 'Emmi-Liia Sjöholm', 39.90, '2024-04-20', 3),
+(5, 'Danten 7 helvettiä', 'Dante Alighieri', 22.50, '2024-05-12', 1);
 
 INSERT INTO laina VALUES
 (1, 2, 2, '2025-01-18', '17:00:00'),
