@@ -1,3 +1,7 @@
+CREATE DATABASE lukutoukka;
+
+USE lukutoukka;
+
 CREATE TABLE omistaja (
     omistaja_id INT PRIMARY KEY,
     etunimi VARCHAR(50),
