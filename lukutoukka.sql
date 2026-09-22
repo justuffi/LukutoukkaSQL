@@ -1,7 +1,7 @@
 CREATE TABLE omistaja (
     omistaja_id INT PRIMARY KEY,
     etunimi VARCHAR(50),
-    sukunimi VARCHAR(50)
+    sukunim VARCHAR(50)
 );
 
 CREATE TABLE kategoria (
