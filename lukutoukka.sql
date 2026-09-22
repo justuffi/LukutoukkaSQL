@@ -41,11 +41,11 @@ INSERT INTO omistaja VALUES
 (5, 'Kimmo', 'Laiho');
 
 INSERT INTO kategoria VALUES
-(1, 'Fantasia'),
-(2, 'Scifi'),
+(1, 'Manga'),
+(2, 'Kaunokirjallisuus'),
 (3, 'Tietokirja'),
 (4, 'Romaani'),
-(5, 'Kauhu');
+(5, 'Klassikko');
 
 INSERT INTO kirja VALUES
 (1, 'One Piece Vol. 1', 'Eiichiro Oda', 24.90, '2024-01-15', 1),
