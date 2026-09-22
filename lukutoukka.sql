@@ -34,11 +34,12 @@ CREATE TABLE laina (
 );
 
 INSERT INTO omistaja VALUES
-(1, 'Kimi', 'Raikkonen'),
-(2, 'Sauli', 'Niinisto'),
-(3, 'Mika', 'Hakkinen'),
-(4, 'Sanna', 'Marin'),
-(5, 'Teemu', 'Selanne');
+(1, 'Jyti', 'Cee'),
+(2, 'Mikael', 'Kosola'),
+(3, 'Eino', 'Leino'),
+(4, 'Donkey', 'Kong'),
+(5, 'Kimmo', 'Laiho');
+
 
 INSERT INTO kategoria VALUES
 (1, 'Fantasia'),
