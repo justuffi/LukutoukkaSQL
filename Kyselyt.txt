@@ -1,0 +1,52 @@
+/* AS */
+SELECT nimi AS KirjanNimi
+FROM kirja;
+
+/* OR */
+SELECT *
+FROM kirja
+WHERE kirjailija = 'Eiichiro Oda'
+OR kirjailija = 'Mika Waltari';
+
+/* AND */
+SELECT *
+FROM kirja
+WHERE ostohinta > 20
+AND kategoria_id = 1;
+
+/* COUNT */
+SELECT COUNT(*) AS KirjojenMaara
+FROM kirja;
+
+/* AVG */
+SELECT AVG(ostohinta) AS Keskihinta
+FROM kirja;
+
+/* MAX */
+SELECT MAX(ostohinta) AS KalleinKirja
+FROM kirja;
+
+/* GROUP BY */
+SELECT kategoria_id, COUNT(*) AS Kirjoja
+FROM kirja
+GROUP BY kategoria_id;
+
+/* HAVING */
+SELECT kategoria_id, COUNT(*) AS Kirjoja
+FROM kirja
+GROUP BY kategoria_id
+HAVING COUNT(*) >= 1;
+
+/* INNER JOIN */
+SELECT k.nimi, o.etunimi, o.sukunimi
+FROM laina l
+INNER JOIN kirja k
+ON l.kirja_id = k.kirja_id
+INNER JOIN omistaja o
+ON l.omistaja_id = o.omistaja_id;
+
+/* LEFT JOIN */
+SELECT k.nimi, ka.kategorian_nimi
+FROM kirja k
+LEFT JOIN kategoria ka
+ON k.kategoria_id = ka.kategoria_id;
